@@ -15,6 +15,9 @@
 		50C001602061B1B800BAB2D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C0015E2061B1B800BAB2D4 /* LaunchScreen.storyboard */; };
 		50C0016B2061B1B900BAB2D4 /* laaatteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0016A2061B1B900BAB2D4 /* laaatteTests.swift */; };
 		50C001762061B1B900BAB2D4 /* laaatteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C001752061B1B900BAB2D4 /* laaatteUITests.swift */; };
+		50C001852061D69D00BAB2D4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 50C001832061D69D00BAB2D4 /* Podfile */; };
+		50C001862061D69D00BAB2D4 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 50C001842061D69D00BAB2D4 /* README */; };
+		9C8AB6506CAF57356A557115 /* libPods-laaatte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5830350E06319C53722B42 /* libPods-laaatte.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E5830350E06319C53722B42 /* libPods-laaatte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-laaatte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C0014F2061B1B800BAB2D4 /* laaatte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = laaatte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C001522061B1B800BAB2D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C001542061B1B800BAB2D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		50C001712061B1B900BAB2D4 /* laaatteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = laaatteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C001752061B1B900BAB2D4 /* laaatteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = laaatteUITests.swift; sourceTree = "<group>"; };
 		50C001772061B1B900BAB2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C001832061D69D00BAB2D4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		50C001842061D69D00BAB2D4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		ADA7DDCA80D49B5C911746CF /* Pods-laaatte.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-laaatte.release.xcconfig"; path = "Pods/Target Support Files/Pods-laaatte/Pods-laaatte.release.xcconfig"; sourceTree = "<group>"; };
+		BE08CFB7306656BCA2007209 /* Pods-laaatte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-laaatte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-laaatte/Pods-laaatte.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8AB6506CAF57356A557115 /* libPods-laaatte.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +85,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C1D8C1D5FFEB2432B8984E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E5830350E06319C53722B42 /* libPods-laaatte.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50C001462061B1B800BAB2D4 = {
 			isa = PBXGroup;
 			children = (
+				50C001832061D69D00BAB2D4 /* Podfile */,
+				50C001842061D69D00BAB2D4 /* README */,
 				50C001512061B1B800BAB2D4 /* laaatte */,
 				50C001692061B1B900BAB2D4 /* laaatteTests */,
 				50C001742061B1B900BAB2D4 /* laaatteUITests */,
 				50C001502061B1B800BAB2D4 /* Products */,
+				D3E5A4FBA3942A772B77D6E8 /* Pods */,
+				03C1D8C1D5FFEB2432B8984E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +149,15 @@
 			path = laaatteUITests;
 			sourceTree = "<group>";
 		};
+		D3E5A4FBA3942A772B77D6E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE08CFB7306656BCA2007209 /* Pods-laaatte.debug.xcconfig */,
+				ADA7DDCA80D49B5C911746CF /* Pods-laaatte.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50C0017A2061B1B900BAB2D4 /* Build configuration list for PBXNativeTarget "laaatte" */;
 			buildPhases = (
+				0024E1FDAA4B38D097EEF040 /* [CP] Check Pods Manifest.lock */,
 				50C0014B2061B1B800BAB2D4 /* Sources */,
 				50C0014C2061B1B800BAB2D4 /* Frameworks */,
 				50C0014D2061B1B800BAB2D4 /* Resources */,
+				B85C691ED60BA7F6419F7510 /* [CP] Embed Pods Frameworks */,
+				C338F3545B0F6C42CADEBAE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +223,7 @@
 		50C001472061B1B800BAB2D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = com.gffny;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = gffny.com;
@@ -235,8 +269,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C001862061D69D00BAB2D4 /* README in Resources */,
 				50C001602061B1B800BAB2D4 /* LaunchScreen.storyboard in Resources */,
 				50C0015D2061B1B800BAB2D4 /* Assets.xcassets in Resources */,
+				50C001852061D69D00BAB2D4 /* Podfile in Resources */,
 				50C001582061B1B800BAB2D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +292,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0024E1FDAA4B38D097EEF040 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-laaatte-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B85C691ED60BA7F6419F7510 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-laaatte/Pods-laaatte-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C338F3545B0F6C42CADEBAE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-laaatte/Pods-laaatte-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-laaatte/Pods-laaatte-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50C0014B2061B1B800BAB2D4 /* Sources */ = {
@@ -428,6 +520,7 @@
 		};
 		50C0017B2061B1B900BAB2D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE08CFB7306656BCA2007209 /* Pods-laaatte.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +535,7 @@
 		};
 		50C0017C2061B1B900BAB2D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA7DDCA80D49B5C911746CF /* Pods-laaatte.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
