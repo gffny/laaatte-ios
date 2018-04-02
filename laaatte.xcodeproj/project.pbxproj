@@ -17,6 +17,9 @@
 		50C001762061B1B900BAB2D4 /* laaatteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C001752061B1B900BAB2D4 /* laaatteUITests.swift */; };
 		50C001852061D69D00BAB2D4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 50C001832061D69D00BAB2D4 /* Podfile */; };
 		50C001862061D69D00BAB2D4 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 50C001842061D69D00BAB2D4 /* README */; };
+		50C001892063FC3100BAB2D4 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C001882063FC3100BAB2D4 /* PlaceModel.swift */; };
+		50C0018B2063FFED00BAB2D4 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0018A2063FFED00BAB2D4 /* MapModel.swift */; };
+		50C0018E206400C600BAB2D4 /* LaaatteRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0018D206400C600BAB2D4 /* LaaatteRestService.swift */; };
 		9C8AB6506CAF57356A557115 /* libPods-laaatte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5830350E06319C53722B42 /* libPods-laaatte.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		50C001772061B1B900BAB2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50C001832061D69D00BAB2D4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		50C001842061D69D00BAB2D4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		50C001882063FC3100BAB2D4 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		50C0018A2063FFED00BAB2D4 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		50C0018D206400C600BAB2D4 /* LaaatteRestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaaatteRestService.swift; sourceTree = "<group>"; };
 		ADA7DDCA80D49B5C911746CF /* Pods-laaatte.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-laaatte.release.xcconfig"; path = "Pods/Target Support Files/Pods-laaatte/Pods-laaatte.release.xcconfig"; sourceTree = "<group>"; };
 		BE08CFB7306656BCA2007209 /* Pods-laaatte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-laaatte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-laaatte/Pods-laaatte.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +126,8 @@
 		50C001512061B1B800BAB2D4 /* laaatte */ = {
 			isa = PBXGroup;
 			children = (
+				50C0018C206400AE00BAB2D4 /* services */,
+				50C001872063FC0600BAB2D4 /* models */,
 				50C001522061B1B800BAB2D4 /* AppDelegate.swift */,
 				50C001542061B1B800BAB2D4 /* ViewController.swift */,
 				50C001562061B1B800BAB2D4 /* Main.storyboard */,
@@ -147,6 +155,23 @@
 				50C001772061B1B900BAB2D4 /* Info.plist */,
 			);
 			path = laaatteUITests;
+			sourceTree = "<group>";
+		};
+		50C001872063FC0600BAB2D4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				50C001882063FC3100BAB2D4 /* PlaceModel.swift */,
+				50C0018A2063FFED00BAB2D4 /* MapModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		50C0018C206400AE00BAB2D4 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				50C0018D206400C600BAB2D4 /* LaaatteRestService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		D3E5A4FBA3942A772B77D6E8 /* Pods */ = {
@@ -355,7 +380,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C001552061B1B800BAB2D4 /* ViewController.swift in Sources */,
+				50C0018B2063FFED00BAB2D4 /* MapModel.swift in Sources */,
+				50C0018E206400C600BAB2D4 /* LaaatteRestService.swift in Sources */,
 				50C0015B2061B1B800BAB2D4 /* laaatte.xcdatamodeld in Sources */,
+				50C001892063FC3100BAB2D4 /* PlaceModel.swift in Sources */,
 				50C001532061B1B800BAB2D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

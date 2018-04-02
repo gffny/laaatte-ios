@@ -13,6 +13,7 @@ import GoogleMaps
 class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
     let locationManager = CLLocationManager()
+    var laaatteRestService: LaaatteRestService
 
     // label references
     @IBOutlet weak var latVal: UILabel!
@@ -46,6 +47,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     // Print out the location to the console
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
+
+            let mapModel = self.laaatteRestService.retrieveLocalMapModel(location)
 
             // Create a GMSCameraPosition that tells the map to display the
             //let camera = GMSCameraPosition.camera(withLatitude: location.coordinate.latitude, longitude: location.coordinate.longitude, zoom: 6.0)
